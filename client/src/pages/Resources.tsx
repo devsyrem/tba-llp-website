@@ -82,10 +82,23 @@ export default function Resources() {
                   <p className="text-base text-muted-foreground leading-relaxed mb-6">
                     {article.excerpt}
                   </p>
-                  <Button variant="outline" className="w-full" data-testid={`button-read-${index}`}>
-                    Read Article
-                    <ArrowRight className="ml-2 w-4 h-4" />
-                  </Button>
+                  {index === 0 ? (
+                    <a 
+                      href="https://www.financialplanningassociation.org/learning/publications/journal/JAN23-untangling-behavioral-finance-and-psychology-financial-planning-OPEN" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      <Button variant="outline" className="w-full" data-testid={`button-read-${index}`}>
+                        Read Article
+                        <ArrowRight className="ml-2 w-4 h-4" />
+                      </Button>
+                    </a>
+                  ) : (
+                    <Button variant="outline" className="w-full" data-testid={`button-read-${index}`}>
+                      Read Article
+                      <ArrowRight className="ml-2 w-4 h-4" />
+                    </Button>
+                  )}
                 </CardContent>
               </Card>
             ))}
