@@ -104,6 +104,17 @@ export default function Resources() {
                         <ArrowRight className="ml-2 w-4 h-4" />
                       </Button>
                     </a>
+                  ) : index === 2 ? (
+                    <a 
+                      href="https://www.investopedia.com/terms/i/indexfund.asp" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      <Button variant="outline" className="w-full" data-testid={`button-read-${index}`}>
+                        Read Article
+                        <ArrowRight className="ml-2 w-4 h-4" />
+                      </Button>
+                    </a>
                   ) : (
                     <Button variant="outline" className="w-full" data-testid={`button-read-${index}`}>
                       Read Article
