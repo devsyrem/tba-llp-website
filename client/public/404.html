@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // GitHub Pages SPA redirect - preserves path for client-side routing
+      // Store the full URL path to be restored after redirect
+      sessionStorage.redirect = location.pathname + location.search + location.hash;
+      
+      // Redirect to index.html in the same directory (works for both root and repo deployments)
+      var pathSegments = location.pathname.split('/').filter(function(s) { return s; });
+      var basePath = pathSegments.length > 1 ? '/' + pathSegments[0] + '/' : '/';
+      location.replace(basePath);
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
