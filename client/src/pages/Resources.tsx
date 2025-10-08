@@ -115,6 +115,17 @@ export default function Resources() {
                         <ArrowRight className="ml-2 w-4 h-4" />
                       </Button>
                     </a>
+                  ) : index === 3 ? (
+                    <a 
+                      href="https://www.charles-stanley.co.uk/insights/commentary/the-power-of-compounding" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      <Button variant="outline" className="w-full" data-testid={`button-read-${index}`}>
+                        Read Article
+                        <ArrowRight className="ml-2 w-4 h-4" />
+                      </Button>
+                    </a>
                   ) : (
                     <Button variant="outline" className="w-full" data-testid={`button-read-${index}`}>
                       Read Article
