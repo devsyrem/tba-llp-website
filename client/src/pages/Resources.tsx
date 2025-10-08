@@ -93,6 +93,17 @@ export default function Resources() {
                         <ArrowRight className="ml-2 w-4 h-4" />
                       </Button>
                     </a>
+                  ) : index === 1 ? (
+                    <a 
+                      href="https://www.jpmorgan.com/insights/wealth-planning/trusts-and-estates/three-ways-to-help-your-wealth-last-for-generations-to-come" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      <Button variant="outline" className="w-full" data-testid={`button-read-${index}`}>
+                        Read Article
+                        <ArrowRight className="ml-2 w-4 h-4" />
+                      </Button>
+                    </a>
                   ) : (
                     <Button variant="outline" className="w-full" data-testid={`button-read-${index}`}>
                       Read Article
